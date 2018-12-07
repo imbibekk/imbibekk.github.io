@@ -1,0 +1,37 @@
+
+/*  Element selesctor */
+
+
+
+.title {
+   
+
+    text-align: center;
+    font-size: 3em;
+    margin: .83em 0;
+    margin-top: 0.83em;
+    margin-right: 0px;
+    margin-bottom: 0.83em;
+    margin-left: 0px;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*  links section */
+
+#link-section {
+
+    text-align: left;
+}
+
+.custom-table, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+
+.left-side {
+    
+}
