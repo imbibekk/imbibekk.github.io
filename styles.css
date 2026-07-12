@@ -70,14 +70,23 @@ h1 {
   line-height: 1.1;
 }
 
-.intro {
-  margin: 1.25rem 0 0;
-  max-width: 42rem;
-  font-size: clamp(1rem, 2.4vw, 1.15rem);
-  line-height: 1.7;
+.intro-lead {
+  margin: 1.5rem 0 0;
+  max-width: 34rem;
+  font-size: clamp(1.2rem, 2.6vw, 1.45rem);
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   color: var(--fg);
 }
-.location { margin: 1rem 0 0; color: var(--muted); }
+.intro-body {
+  margin: 1rem 0 0;
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.location { margin: 1.5rem 0 0; color: var(--muted); }
 
 .links { margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
