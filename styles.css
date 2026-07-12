@@ -86,7 +86,6 @@ h1 {
   line-height: 1.8;
   color: var(--muted);
 }
-.location { margin: 1.5rem 0 0; color: var(--muted); }
 
 .links { margin-top: 1.75rem; display: flex; gap: 0.35rem; flex-wrap: wrap; align-items: center; }
 
