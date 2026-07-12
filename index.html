@@ -9,18 +9,69 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="hero">
-    <p class="eyebrow">AI Engineer</p>
-    <h1>Bibek Chaudhary</h1>
-    <p class="tagline">Building agentic &amp; RAG systems.</p>
-    <p class="location">Seoul, South Korea</p>
+  <div class="wrap">
+    <header class="hero">
+      <p class="eyebrow">AI Engineer</p>
+      <h1>Bibek Chaudhary</h1>
+      <p class="tagline">Building agentic &amp; RAG systems.</p>
+      <p class="location">Seoul, South Korea</p>
+      <nav class="links" aria-label="Profile links">
+        <a href="https://github.com/imbibekk" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:chaudhary.bibekk@gmail.com">Email</a>
+      </nav>
+    </header>
 
-    <nav class="links" aria-label="Profile links">
-      <a href="https://github.com/imbibekk" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:chaudhary.bibekk@gmail.com">Email</a>
-    </nav>
+    <main>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Experience</h2>
 
-    <p class="wip">Portfolio in progress — more coming soon.</p>
-  </main>
+        <ol class="timeline">
+          <li class="role">
+            <div class="role-head">
+              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">ESTsoft</span></h3>
+              <p class="role-meta"><span class="dates">Oct 2023 — Present</span> <span class="dot">·</span> Seoul, South Korea</p>
+            </div>
+            <ul class="bullets">
+              <li>Designed and shipped an agentic system for end-to-end slide generation, turning researched content into visually consistent infographic presentations for <strong>Alan</strong>, ESTsoft's consumer AI assistant.</li>
+              <li>Hardened reliability with structured outputs, validation, parallel execution, retries, model fallbacks, and LangSmith tracing — so individual failures never interrupt a full generation job.</li>
+              <li>Built an evidence-grounded Notion retrieval system (query reformulation, multi-hop retrieval, coverage checks, citations, refusal rules), improving accuracy from <strong>80% to ~92%</strong> on 30 complex queries.</li>
+              <li>Shipped a company-wide agent plugin for government proposal writing — eligibility screening, evidence collection, technical planning, budget validation, drafting, and compliance review with human approval gates. Used on real submissions: <strong>five passed screening, one won a contract</strong>.</li>
+              <li>Developed a TypeScript/Node.js library that converts Markdown into Korean HWPX templates while preserving layout compatibility, eliminating per-template configuration.</li>
+            </ul>
+          </li>
+
+          <li class="role">
+            <div class="role-head">
+              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">Upstage</span></h3>
+              <p class="role-meta"><span class="dates">Jan 2022 — Sep 2023</span> <span class="dot">·</span> Seoul, South Korea</p>
+            </div>
+            <ul class="bullets">
+              <li>Built training and inference pipelines for OCR models on Korean financial documents, enabling automated extraction from complex document layouts.</li>
+              <li>Improved recommendation quality with collaborative-filtering features and enhanced negative down-sampling, strengthening ranking performance.</li>
+              <li>Automated internal knowledge capture with a GPT-based workflow that summarized Slack discussions into organized Notion pages.</li>
+              <li>Trained diverse text-detection models for an ensemble that won the <strong>2023 ICDAR Hierarchical Text Detection</strong> competition.</li>
+            </ul>
+          </li>
+
+          <li class="role">
+            <div class="role-head">
+              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">Nota</span></h3>
+              <p class="role-meta"><span class="dates">Jan 2019 — Dec 2021</span> <span class="dot">·</span> Seoul, South Korea</p>
+            </div>
+            <ul class="bullets">
+              <li>Owned the pipeline integrating pruning, knowledge distillation, and quantization into <strong>Netspresso</strong>, making the techniques available on the production model-compression platform.</li>
+              <li>Implemented and trained benchmark models across classification, segmentation, and detection — ResNet, MobileNet, U-Net, YOLO, SSD — to validate Netspresso across CV tasks.</li>
+              <li>Benchmarked accuracy and edge performance before and after compression with TensorRT and ONNX, validating deployment on NVIDIA Jetson Nano and Raspberry Pi 4.</li>
+              <li>Led a three-person research team tracking object-detection advances and translating research into working implementations for benchmarking.</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>More coming soon — projects, writing &amp; résumé.</p>
+    </footer>
+  </div>
 </body>
 </html>
