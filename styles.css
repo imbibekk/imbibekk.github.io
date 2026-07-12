@@ -112,35 +112,41 @@ h1 {
 .timeline { list-style: none; margin: 0; padding: 0; }
 
 .entry {
+  position: relative;
   display: grid;
-  grid-template-columns: 3.75rem 1fr;
-  gap: 1.25rem;
+  grid-template-columns: 3.25rem 1fr;
+  column-gap: 2rem;
 }
 
 .rail {
-  position: relative;
   text-align: right;
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
 }
 
-/* vertical spine line */
-.rail::before {
+/* vertical spine line — absolutely placed, centred in the gap so it never
+   collides with the right-aligned date */
+.entry::before {
   content: "";
   position: absolute;
-  top: 0.35rem;
-  bottom: -1.5rem;
-  right: -0.625rem;
+  left: calc(3.25rem + 1rem);
+  margin-left: -1px;
   width: 2px;
+  top: 0;
+  bottom: -1.5rem;
   background: var(--border);
 }
-.entry:last-child .rail::before { bottom: auto; height: 1.5rem; }
+.entry:first-child::before { top: 1.75rem; }
+.entry:last-child::before { top: 0; bottom: auto; height: 1.75rem; }
+.entry:only-child::before { display: none; }
 
-/* dot on the spine */
-.rail::after {
+/* dot on the spine, aligned with the card header */
+.entry::after {
   content: "";
   position: absolute;
-  top: 1.5rem;
-  right: -0.9375rem;
+  left: calc(3.25rem + 1rem);
+  margin-left: -6.5px;
+  top: 1.75rem;
+  margin-top: -6.5px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -201,22 +207,12 @@ h1 {
   text-decoration: none;
   transition: color 0.15s ease;
 }
-.company-link::after {
-  content: "↗";
-  font-size: 0.62em;
-  font-weight: 600;
-  margin-left: 0.18em;
-  color: var(--muted);
-  vertical-align: 0.35em;
-  transition: color 0.15s ease;
-}
 .company-link:hover {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
-.company-link:hover::after { color: var(--accent); }
 
 .badge {
   font-size: 0.65rem;
@@ -303,7 +299,9 @@ h1 {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 560px) {
-  .entry { grid-template-columns: 2.75rem 1fr; gap: 0.9rem; }
+  .entry { grid-template-columns: 2.5rem 1fr; column-gap: 1.5rem; }
+  .entry::before,
+  .entry::after { left: calc(2.5rem + 0.75rem); }
   .card-summary { padding: 1.15rem 1.15rem; }
   .card-body { padding: 0 1.15rem 1.25rem; }
   .company { font-size: 1.1rem; }
