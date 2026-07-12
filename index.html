@@ -24,46 +24,104 @@
     <main>
       <section class="section" id="experience" aria-labelledby="experience-title">
         <h2 class="section-title" id="experience-title">Experience</h2>
+        <p class="section-hint">Tap any role to see the full story.</p>
 
         <ol class="timeline">
-          <li class="role">
-            <div class="role-head">
-              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">ESTsoft</span></h3>
-              <p class="role-meta"><span class="dates">Oct 2023 — Present</span> <span class="dot">·</span> Seoul, South Korea</p>
+          <!-- ESTsoft -->
+          <li class="entry">
+            <div class="rail">
+              <span class="rail-date">2023<br>— Now</span>
             </div>
-            <ul class="bullets">
-              <li>Designed and shipped an agentic system for end-to-end slide generation, turning researched content into visually consistent infographic presentations for <strong>Alan</strong>, ESTsoft's consumer AI assistant.</li>
-              <li>Hardened reliability with structured outputs, validation, parallel execution, retries, model fallbacks, and LangSmith tracing — so individual failures never interrupt a full generation job.</li>
-              <li>Built an evidence-grounded Notion retrieval system (query reformulation, multi-hop retrieval, coverage checks, citations, refusal rules), improving accuracy from <strong>80% to ~92%</strong> on 30 complex queries.</li>
-              <li>Shipped a company-wide agent plugin for government proposal writing — eligibility screening, evidence collection, technical planning, budget validation, drafting, and compliance review with human approval gates. Used on real submissions: <strong>five passed screening, one won a contract</strong>.</li>
-              <li>Developed a TypeScript/Node.js library that converts Markdown into Korean HWPX templates while preserving layout compatibility, eliminating per-template configuration.</li>
-            </ul>
+            <details class="card">
+              <summary class="card-summary">
+                <div class="card-head">
+                  <div class="card-title">
+                    <h3 class="company">ESTsoft <span class="badge badge-now">Current</span></h3>
+                    <p class="role">AI Research Engineer <span class="dot">·</span> Oct 2023 — Present <span class="dot">·</span> Seoul</p>
+                  </div>
+                  <span class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </div>
+                <p class="highlight">Designed and shipped an agentic system for end-to-end slide generation, turning researched content into visually consistent infographic presentations for <strong>Alan</strong>, ESTsoft's consumer AI assistant.</p>
+                <span class="more-hint" aria-hidden="true"></span>
+              </summary>
+              <div class="card-body">
+                <ul class="bullets">
+                  <li>Hardened reliability with structured outputs, validation, parallel execution, retries, model fallbacks, and LangSmith tracing — so individual failures never interrupt a full generation job.</li>
+                  <li>Built an evidence-grounded Notion retrieval system (query reformulation, multi-hop retrieval, coverage checks, citations, refusal rules), improving accuracy from <strong>80% to ~92%</strong> on 30 complex queries.</li>
+                  <li>Shipped a company-wide agent plugin for government proposal writing — eligibility screening, evidence collection, technical planning, budget validation, drafting, and compliance review with human approval gates. Used on real submissions: <strong>five passed screening, one won a contract</strong>.</li>
+                  <li>Developed a TypeScript/Node.js library that converts Markdown into Korean HWPX templates while preserving layout compatibility, eliminating per-template configuration.</li>
+                </ul>
+                <ul class="tags">
+                  <li>Agentic Systems</li><li>RAG</li><li>LLM Evaluation</li><li>LangGraph</li><li>TypeScript</li>
+                </ul>
+              </div>
+            </details>
           </li>
 
-          <li class="role">
-            <div class="role-head">
-              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">Upstage</span></h3>
-              <p class="role-meta"><span class="dates">Jan 2022 — Sep 2023</span> <span class="dot">·</span> Seoul, South Korea</p>
+          <!-- Upstage -->
+          <li class="entry">
+            <div class="rail">
+              <span class="rail-date">2022<br>— 23</span>
             </div>
-            <ul class="bullets">
-              <li>Built training and inference pipelines for OCR models on Korean financial documents, enabling automated extraction from complex document layouts.</li>
-              <li>Improved recommendation quality with collaborative-filtering features and enhanced negative down-sampling, strengthening ranking performance.</li>
-              <li>Automated internal knowledge capture with a GPT-based workflow that summarized Slack discussions into organized Notion pages.</li>
-              <li>Trained diverse text-detection models for an ensemble that won the <strong>2023 ICDAR Hierarchical Text Detection</strong> competition.</li>
-            </ul>
+            <details class="card">
+              <summary class="card-summary">
+                <div class="card-head">
+                  <div class="card-title">
+                    <h3 class="company">Upstage</h3>
+                    <p class="role">AI Research Engineer <span class="dot">·</span> Jan 2022 — Sep 2023 <span class="dot">·</span> Seoul</p>
+                  </div>
+                  <span class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </div>
+                <p class="highlight">Trained diverse text-detection models for an ensemble that won the <strong>2023 ICDAR Hierarchical Text Detection</strong> competition.</p>
+                <span class="more-hint" aria-hidden="true"></span>
+              </summary>
+              <div class="card-body">
+                <ul class="bullets">
+                  <li>Built training and inference pipelines for OCR models on Korean financial documents, enabling automated extraction from complex document layouts.</li>
+                  <li>Improved recommendation quality with collaborative-filtering features and enhanced negative down-sampling, strengthening ranking performance.</li>
+                  <li>Automated internal knowledge capture with a GPT-based workflow that summarized Slack discussions into organized Notion pages.</li>
+                </ul>
+                <ul class="tags">
+                  <li>OCR</li><li>Text Detection</li><li>Recommendation</li><li>Ensembles</li>
+                </ul>
+              </div>
+            </details>
           </li>
 
-          <li class="role">
-            <div class="role-head">
-              <h3 class="role-title">AI Research Engineer <span class="at">·</span> <span class="company">Nota</span></h3>
-              <p class="role-meta"><span class="dates">Jan 2019 — Dec 2021</span> <span class="dot">·</span> Seoul, South Korea</p>
+          <!-- Nota -->
+          <li class="entry">
+            <div class="rail">
+              <span class="rail-date">2019<br>— 21</span>
             </div>
-            <ul class="bullets">
-              <li>Owned the pipeline integrating pruning, knowledge distillation, and quantization into <strong>Netspresso</strong>, making the techniques available on the production model-compression platform.</li>
-              <li>Implemented and trained benchmark models across classification, segmentation, and detection — ResNet, MobileNet, U-Net, YOLO, SSD — to validate Netspresso across CV tasks.</li>
-              <li>Benchmarked accuracy and edge performance before and after compression with TensorRT and ONNX, validating deployment on NVIDIA Jetson Nano and Raspberry Pi 4.</li>
-              <li>Led a three-person research team tracking object-detection advances and translating research into working implementations for benchmarking.</li>
-            </ul>
+            <details class="card">
+              <summary class="card-summary">
+                <div class="card-head">
+                  <div class="card-title">
+                    <h3 class="company">Nota</h3>
+                    <p class="role">AI Research Engineer <span class="dot">·</span> Jan 2019 — Dec 2021 <span class="dot">·</span> Seoul</p>
+                  </div>
+                  <span class="chevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </div>
+                <p class="highlight">Owned the pipeline integrating pruning, knowledge distillation, and quantization into <strong>Netspresso</strong>, Nota's production model-compression platform.</p>
+                <span class="more-hint" aria-hidden="true"></span>
+              </summary>
+              <div class="card-body">
+                <ul class="bullets">
+                  <li>Implemented and trained benchmark models across classification, segmentation, and detection — ResNet, MobileNet, U-Net, YOLO, SSD — to validate Netspresso across CV tasks.</li>
+                  <li>Benchmarked accuracy and edge performance before and after compression with TensorRT and ONNX, validating deployment on NVIDIA Jetson Nano and Raspberry Pi 4.</li>
+                  <li>Led a three-person research team tracking object-detection advances and translating research into working implementations for benchmarking.</li>
+                </ul>
+                <ul class="tags">
+                  <li>Model Compression</li><li>Quantization</li><li>Edge AI</li><li>Computer Vision</li>
+                </ul>
+              </div>
+            </details>
           </li>
         </ol>
       </section>
