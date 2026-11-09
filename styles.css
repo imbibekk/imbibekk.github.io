@@ -322,3 +322,17 @@ h1 {
   * { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Selected production work */
+.selected-work { margin-top: 0; margin-bottom: 3rem; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+.project-card { display: flex; flex-direction: column; padding: 1.6rem; background: var(--card); border: 1px solid var(--border); border-radius: .875rem; box-shadow: var(--card-shadow); }
+.project-card .eyebrow { font-size: .68rem; }
+.project-card h3 { font-size: 1.25rem; line-height: 1.35; letter-spacing: -.02em; margin: .5rem 0 .9rem; }
+.project-card p:not(.eyebrow) { font-size: .9rem; color: var(--muted); margin: 0 0 1rem; }
+.project-card .project-outcome { border-top: 1px solid var(--border); padding-top: 1rem; margin-top: auto !important; }
+.project-outcome strong { display: block; color: var(--fg); font-size: .9rem; }
+.project-outcome span { display: block; font-size: .78rem; margin-top: .35rem; }
+.project-link { color: var(--accent); text-decoration: none; font-size: .85rem; font-weight: 600; }
+.project-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 620px) { .project-grid { grid-template-columns: 1fr; } }

@@ -6,7 +6,7 @@
   <title>Bibek Chaudhary — AI Engineer</title>
   <meta name="description" content="Bibek Chaudhary — AI Engineer in Seoul, building agentic and RAG systems.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%91%8B</text></svg>">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
   <div class="wrap">
@@ -14,7 +14,7 @@
       <p class="eyebrow">AI Engineer</p>
       <h1>Bibek Chaudhary</h1>
       <p class="intro-lead">I'm an AI Engineer who turns LLMs into dependable, production-grade systems.</p>
-      <p class="intro-body">I've shipped agentic systems end to end — a slide-generation agent for a consumer AI assistant and a government-proposal agent that helped win a real contract. Beyond LLMs, I've worked on OCR, recommendation, and on-device model compression — and I compete as a Kaggle Competitions Master.</p>
+      <p class="intro-body">I've built and deployed RAG for a live agricultural chat service and an agent workflow that helped our team win four government R&amp;D contracts worth over $1M. My work spans company knowledge systems, proposal automation, and customer-facing AI services. Beyond LLMs, I've worked on OCR, recommendation, and on-device model compression — and I compete as a Kaggle Competitions Master.</p>
       <nav class="links" aria-label="Profile links">
         <a href="https://github.com/imbibekk" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -32,6 +32,26 @@
     </header>
 
     <main>
+      <section class="section selected-work" aria-labelledby="selected-work-title">
+        <h2 class="section-title" id="selected-work-title">Selected Work</h2>
+        <p class="section-hint">Enterprise workflows and AI services in production.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="eyebrow">Enterprise agents</p>
+            <h3>From RFP review to proposal writing</h3>
+            <p>Connected company knowledge, opportunity fit checks, and technical and administrative writing into one agent workflow, with human approval at key decisions.</p>
+            <p class="project-outcome"><strong>4 of 5 contracts won · $1M+</strong><span>Team outcomes supported by the workflow.</span></p>
+            <a class="project-link" href="https://bibek-proposal-workflow.estsoft-1740.chatgpt.site" target="_blank" rel="noopener">Explore the case study <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <p class="eyebrow">Production RAG</p>
+            <h3>Agricultural knowledge, ready for conversation</h3>
+            <p>Built and deployed a RAG system for a live agricultural chat service, bringing relevant source material into customer-facing conversations.</p>
+            <p>My work also covered source-linked corpus preparation, hybrid retrieval, reranking, and separate evaluation of retrieval and answer quality.</p>
+            <p class="project-outcome"><strong>From source documents to a live service</strong><span>Diagnosed evidence gaps and generation failures to guide improvements.</span></p>
+          </article>
+        </div>
+      </section>
       <section class="section" id="experience" aria-labelledby="experience-title">
         <h2 class="section-title" id="experience-title">Experience</h2>
         <p class="section-hint">Tap any role to see the full story.</p>
@@ -59,8 +79,9 @@
               <div class="card-body">
                 <ul class="bullets">
                   <li>Hardened reliability with structured outputs, validation, parallel execution, retries, model fallbacks, and LangSmith tracing — so individual failures never interrupt a full generation job.</li>
-                  <li>Built an evidence-grounded Notion retrieval system (query reformulation, multi-hop retrieval, coverage checks, citations, refusal rules), improving accuracy from <strong>80% to ~92%</strong> on 30 complex queries.</li>
-                  <li>Shipped a company-wide agent plugin for government proposal writing — eligibility screening, evidence collection, technical planning, budget validation, drafting, and compliance review with human approval gates. Used on real submissions: <strong>five passed screening, one won a contract</strong>.</li>
+                  <li>Built an evidence-grounded Notion retrieval system (query reformulation, multi-hop retrieval, coverage checks, citations, refusal rules), improving accuracy from <strong>80% to ~92%</strong> through query reformulation and evidence checks.</li>
+                  <li>Shipped a company-wide agent plugin for government proposal writing — eligibility screening, evidence collection, technical planning, budget validation, drafting, and compliance review with human approval gates. Helped our team win <strong>4 of 5 contracts worth over $1M combined</strong>.</li>
+                  <li>Built and deployed RAG for a live agricultural chat service. Developed source-linked corpus processing, hybrid retrieval, reranking, and evaluation workflows to distinguish retrieval failures from answer-generation errors.</li>
                   <li>Developed a TypeScript/Node.js library that converts Markdown into Korean HWPX templates while preserving layout compatibility, eliminating per-template configuration.</li>
                 </ul>
                 <ul class="tags">
